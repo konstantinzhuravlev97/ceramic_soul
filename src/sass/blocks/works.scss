@@ -1,0 +1,101 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.works {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__wrapper{
+        position: relative;
+
+    }
+    &__slider {
+        margin-top: 40px;
+        &-nav{
+            display: none;
+        }
+    }
+    .swiper-slide img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .swiper-pagination {
+        bottom: -25px;
+        transform: translateY(50%);
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: $dark;
+        opacity: 1;
+        border-radius: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $ceramic;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .works{
+        &__slider {
+            margin-top: 45px;
+        }
+        .swiper-slide img{
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .works{
+        &__slider{
+            margin: 80px 40px 0 40px;
+            &-nav{
+                display: block;
+                position: absolute;
+                width: 9px;
+                height: 22px;
+                border: 0;
+                padding: 0;
+                background-color: transparent;
+                top: 50%;
+                transform: translateY(50%)
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }            
+        }
+        .swiper-slide img {
+            margin: 0;
+            width: 100%;
+        }
+        .swiper-pagination {
+            bottom: -20px;
+        }
+        .icon-left {
+            left: 16px;
+        }
+        .icon-right{
+            right: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .works{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        &__slider {
+            margin: 80px 85px 0 85px;
+        }
+        .icon-left {
+            left: 40px;
+        }
+
+        .icon-right {
+            right: 40px;
+        }
+    }
+}

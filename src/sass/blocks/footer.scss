@@ -1,9 +1,5 @@
 @use "/src/sass/base/variables.scss" as *;
 
-*{
-    color: $light;
-}
-
 .footer {
     background-color: $dark;
     padding: 50px 0;
@@ -15,6 +11,7 @@
         }
         &-text {
             margin-top: 40px;
+            color: $light;
             font-weight: 400;
             font-size: 16px;
         }
@@ -44,6 +41,7 @@
         display: flex;
         margin-top: 20px;
         align-items: center;
+        color: $light;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;

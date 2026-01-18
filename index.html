@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for Ceramic soul brand" />
     <title>Ceramic soul</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ceramic soul" />
+    <meta property="og:description" content="Make your dream come true or decorate your home" />
+    <meta property="og:image" content="https://live-thecrucible-org.s3.amazonaws.com/uploads/2021/03/potter-4682257_1920.jpg" />
+    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Ceramic soul" />
+    <meta property="twitter:description" content="Make your dream come true or decorate your home" />
+    <meta property="twitter:image" content="https://live-thecrucible-org.s3.amazonaws.com/uploads/2021/03/potter-4682257_1920.jpg" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/src/icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/src/icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/src/icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/src/icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/src/icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/src/icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/src/icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/src/icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/src/icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
@@ -23,9 +51,9 @@
                     </div>
                     <nav class="header__menu-nav">
                         <ul>
-                            <li><a href="#" class="header__menu-link">catalog</a></li>
-                            <li><a href="#" class="header__menu-link">blog</a></li>
-                            <li><a href="#" class="header__menu-link">about</a></li>
+                            <li><a href="/catalog" class="header__menu-link">catalog</a></li>
+                            <li><a href="/blog" class="header__menu-link">blog</a></li>
+                            <li><a href="/about" class="header__menu-link">about</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,7 +63,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#" class="header__logo"><img src="/src/icons/logo.svg" alt="logo"></a>
+                    <a href="/index" class="header__logo"><img src="/src/icons/logo.svg" alt="logo"></a>
                     <div class="header__icons">
                         <a href="#"><img src="/src/icons/search-outline.svg" alt="search"></a>
                         <a href="#"><img src="/src/icons/shopping-bag.svg" alt="bag"></a>
@@ -43,9 +71,9 @@
                 </div>
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="#" class="header__link">catalog</a></li>
-                        <li><a href="#" class="header__link">blog</a></li>
-                        <li><a href="#" class="header__link">about</a></li>
+                        <li><a href="blog" class="header__link">catalog</a></li>
+                        <li><a href="/blog" class="header__link">blog</a></li>
+                        <li><a href="/about" class="header__link">about</a></li>
                     </ul>
                 </nav>   
             </div>
@@ -94,11 +122,11 @@
                     <form action="#" class="touch__form">
                         <fieldset class="touch__fieldset">
                             <div class="touch__input-block">
-                                <label for="#name" class="touch__label">Name</label>
+                                <label for="name" class="touch__label">Name</label>
                                 <input type="text" name="name" id="name" placeholder="Name" class="touch__input" required>    
                             </div>
                             <div class="touch__input-block">
-                                <label for="#email" class="touch__label">Email</label>
+                                <label for="email" class="touch__label">Email</label>
                                 <input type="email" name="email" id="email" placeholder="Email" class="touch__input" required>    
                             </div>
                         </fieldset>
@@ -172,8 +200,8 @@
                         <h2 class="title-h4 footer__links-title">discover</h2>
                         <nav class="footer__nav">
                             <ul>
-                                <li class="footer__link"><a href="#">About Us</a></li>
-                                <li class="footer__link"><a href="#">Blog</a></li>
+                                <li class="footer__link"><a href="/about">About Us</a></li>
+                                <li class="footer__link"><a href="/blog">Blog</a></li>
                             </ul>
                         </nav>
                         
@@ -182,7 +210,7 @@
                         <h2 class="title-h4 footer__links-title">shopping</h2>
                         <nav class="footer__nav">
                             <ul>
-                                <li class="footer__link"><a href="#">Catalog</a></li>
+                                <li class="footer__link"><a href="/catalog">Catalog</a></li>
                             </ul>
                         </nav>
                     </div>

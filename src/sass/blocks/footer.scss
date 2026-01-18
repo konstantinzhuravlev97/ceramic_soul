@@ -22,6 +22,7 @@
             background-color: transparent;
             border: 0;
             border-bottom: 1px solid $ui-active;
+            color: $light;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -113,6 +114,13 @@
         font-weight: 400;
         font-size: 14px;
         color: $light;
+    }
+    .just-validate-error-field {
+        border-bottom: 1px solid $ui-error;
+        outline: none;
+        &::placeholder {
+            color: $ui-error;
+        }
     }
 }
 

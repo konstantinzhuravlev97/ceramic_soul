@@ -101,10 +101,12 @@
                         <label for="question" class="touch__label">Your question</label>
                         <textarea name="question" id="question" placeholder="Question" class="touch__textarea"
                             required></textarea>
+                        <div class="error-message"></div>
                         <label for="checkbox" class="touch__label touch__check-block">
                             <input type="checkbox" id="checkbox" class="touch__checkbox" required>
                             I agree with the <a href="#">terms</a>
                         </label>
+                        <div class="checkbox-error-message"></div>
                         <button class="btn-send touch__btn">send request</button>
                     </form>
                 </div>
@@ -136,10 +138,12 @@
                     <form action="#" class="footer__form">
                         <input type="email" name="email" placeholder="Enter your e-mail" class="footer__form-input"
                             required>
+                        <div class="email-error-message"></div>
                         <label for="footer-checkbox" class="footer__label footer__check-block">
                             <input type="checkbox" id="footer-checkbox" class="footer__checkbox" required>
                             I agree with the <a href="#">terms</a>
                         </label>
+                        <div class="checkbox-error-message"></div>
                         <button class="btn-submit footer__form-btn">submit</button>
                     </form>
                 </div>

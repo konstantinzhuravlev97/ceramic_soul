@@ -38,6 +38,27 @@
     }
 }
 
+.btn-read {
+    @include button;
+    border: 1px solid $dark;
+    border-radius: 2px;
+    width: 145px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $dark;
+    &:hover {
+        border: 1px solid $ceramic;
+        color: $ceramic;
+    }
+    &:active,
+    &:focus {
+        border: 1px solid $ceramic;
+        color: $dark;
+    }
+}
+
 @media screen and (min-width: 1200px) { 
     .btn-default{
         &:hover{

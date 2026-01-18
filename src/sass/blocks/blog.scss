@@ -1,0 +1,93 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.blog {
+    padding-top: 50px;
+    margin-bottom: 60px;
+    &__title {
+        margin-top: 60px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &__card {
+        border: 1px solid $dark;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+        background: $light;
+    }
+    &__data {
+        &-img {
+            max-inline-size: calc(100% + 2px);
+            transform: translateX(-1px) translateY(-1px);
+            object-fit: cover;
+        }
+        &-column {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 25px 25px 0 25px;
+        }
+        &-title {
+            text-align: left;
+        }
+    }
+    &__text {
+        margin-top: 25px;
+        padding: 0 25px 25px 25px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $dark;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        &__wrapper {
+            padding: 25px 25px 0 25px;
+            position: relative;
+            @include angle-decoration;
+        }
+        &__data {
+            &-column {
+                gap: 0;
+                justify-content: space-between;
+            }
+        }
+        &__text {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog {
+        &__wrapper {
+            gap: 50px;
+        }
+        &__card {
+            width: 520px;
+            height: fit-content;
+        }
+        &__data {
+            &-img {
+                height: 240px;    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .blog {
+        padding-top: 40px;
+        &__card {
+            width: 670px;
+            height: auto;
+        }
+        &__title {
+            margin-top: 100px;
+        }
+    }
+}
